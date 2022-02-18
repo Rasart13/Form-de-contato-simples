@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de contato simples.html</title>
-    <link rel="stylesheet" href="src/index.css">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="D:\postifólio\Form-de-contato-simples\src\index.css">
 </head>
 <body>
-    <h2><b>Formulário de contato simples</b><h2>
-    <!--Construção de formulário metodo:
-    Form com os atributos Label, input, textarea-->
-    <form action="/pagina-processa-dados-do-form" method="post">
-        <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" />
-        </div>
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" />
+    <h1>Contato conosco</h1>
+    <form action="pagina-recebe-dados-modo-form" method="post">
+        
+        
+
+      <h2>Bem vindo</h2>
+            <button id="btnDark">Dark</button>
+            <button id="btnLight">Light</button>
+            <button id="btninitial">Default</button>
+      <fieldset >
+      <div>
+            <label for="name">Nome</label>
             </div>
+            <input type="text" id="Nome" />
             <div>
-                <label for="msg">Mensagem</label>
-                <textarea id="msg"></textarea>
+                <div>
+                    <label for="email">Email</label>
                 </div>
+                <div>
+                    <input type="email" id="Email" />
+                </div>
+                <div>
+                    <label for="msg">Mensagem</label>
+                </div>
+                <div>
+                    <textarea id="msg" name="Mensagem" >
+                        </textarea>
+                </div>
+            
                 <div class="button">
-                    <button type="submit">Enviar sua mensagem</button>
-                    
-                        <button type="reset">Cancelar a mensagem</button>
-                    </div>
+                    <button type="submit">concluir</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </fieldset>
+            
         </form>
+        <script lang="javascript" type="text/javascript" src="D:\postifólio\Form-de-contato-simples\src\app.js"></script>
 </body>
 </html>
